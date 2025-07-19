@@ -23,7 +23,7 @@ repository               : "madiemamer/madiemamer.github.io"
 author:
   # Biographic information
   avatar           : "avatarPic.png"
-  name             :# "Your Sidebar Name"
+  name             : # "Your Sidebar Name"
   pronouns         : "She/Her"# example: "she/her"  
   bio              : "Ph.D. Candidate at the Department of Earth and Atmospheric Sciences, Georgia Tech"
   location         : "Columbia, South Carolina"
