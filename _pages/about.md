@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Madeline Mamer, Ph.D. Candidate"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+Hi, welcome! I am a fifth year Ph.D. Candidate working with Alex Robel at Georgia Tech in Atlanta, GA. I enjoy modeling fluids at all different scales, from centimeters to kilometers. Specifically, I'm interested in buoyant induced flows, primarily in polar systems around glacial ice. I have worked with high resolution models of complex flows and coarse resolution models coupled to subgrid models that aim to tie flows induced by glacial meltwater into the broader oceanographic picutre. Through this, I have also developed and applied novel theory of how oceans transfer salty, warm water to melt glacial ice. 
 
 A data-driven personal website
 ======
