@@ -1,9 +1,10 @@
 ---
-title: "Teaching Assistant"
+title: "Root Finding Methods"
 collection: teaching
-type: "Math and Coding Practical"
-permalink: /teaching/2024-MCP
+type: "Guest Lecturer"
+permalink: /teaching/guest-lecture-root-finding-methods
 venue: "School of Earth and Atmosperic Sciences, Georgia Institute of Technology"
 date: 2024-08-01
 location: "Atlanta, GA"
 ---
+

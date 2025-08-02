@@ -8,11 +8,3 @@ date: 2023-08-01
 location: "Atlanta, GA"
 ---
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======

@@ -1,9 +1,9 @@
 ---
-title: "Teaching Assistant"
+title: "Ice Ocean Interactions"
 collection: teaching
-type: "Math and Coding Practical"
-permalink: /teaching/2024-MCP
+type: "Guest Lecturer"
+permalink: /teaching/guest-lecture-ice-ocean-interactions
 venue: "School of Earth and Atmosperic Sciences, Georgia Institute of Technology"
-date: 2024-08-01
+date: 2025-02-01
 location: "Atlanta, GA"
 ---
