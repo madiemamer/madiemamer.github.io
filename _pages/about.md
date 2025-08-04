@@ -3,8 +3,8 @@ permalink: /
 title: "Madeline Mamer, Ph.D. Candidate"
 author_profile: true
 redirect_from: 
-  - /about/
-  - /about.html
+  - /aboutme/
+  - /aboutme.html
 ---
 
 Hi, welcome! I am a fifth year Ph.D. Candidate working with Alex Robel at Georgia Tech in Atlanta, GA. I enjoy modeling fluids at all different scales, from centimeters to kilometers. Specifically, I'm interested in buoyant induced flows, primarily in polar systems around glacial ice. I have worked with high resolution models of complex flows and coarse resolution models coupled to subgrid models that aim to tie flows induced by glacial meltwater into the broader oceanographic picutre. Through this, I have also developed and applied novel theory of how oceans transfer salty, warm water to melt glacial ice. 
