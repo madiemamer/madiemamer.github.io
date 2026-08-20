@@ -261,7 +261,7 @@
 
 /* ==========================================================================
    HERO-STYLE PROFILE OVERRIDE
-   Converts the narrow left sidebar into a centered top hero block
+   Image on left, name/title/bio on the right
    ========================================================================== */
 
 .sidebar {
@@ -277,7 +277,10 @@
     width: 100%;
     max-width: 700px;
     margin: 0 auto 2em auto;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
   }
 
   @include breakpoint($x-large) {
@@ -288,12 +291,12 @@
 .author__avatar {
   @include breakpoint($large) {
     display: block;
-    text-align: center;
+    flex-shrink: 0; /* keeps the image from getting squeezed by the text next to it */
   }
 
   img {
-    max-width: 380px;
-    border-radius: 0%; /* square/editorial look — try 12px instead for soft rounded corners */
+    max-width: 280px; /* a bit smaller than the centered version, since it now sits beside text */
+    border-radius: 0%;
 
     @include breakpoint($large) {
       padding: 0;
@@ -304,12 +307,13 @@
 
 .author__content {
   @include breakpoint($large) {
-    text-align: center;
+    text-align: left;
+    flex: 1; /* lets the text column take up remaining space */
   }
 }
 
 .author__urls-wrapper {
   @include breakpoint($large) {
-    text-align: center;
+    text-align: left;
   }
 }
