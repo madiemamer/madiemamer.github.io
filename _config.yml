@@ -23,10 +23,10 @@ repository               : "madiemamer/madiemamer.github.io"
 author:
   # Biographic information
   avatar           : "avatarPic.png"
-  name             : "Madeline Mamer"
-  pronouns         : "Chapel Hill, North Carolina"# example: "she/her"  
-  bio              : "Where rivers of ice meet swirls of seawater"
-  location         : "Chapel Hill, North Carolina"
+  name             : "Where rivers of ice meet swirls of seawater"
+  pronouns         : ""# example: "she/her"  
+  bio              : ""
+  location         : "Postdoctoral Researcher | Carolina Dynamical Oceanography Group | UNC Chapel Hill"
   #employer	   : 
   uri              : # URL
   email            : "msmamer@unc.edu" 
