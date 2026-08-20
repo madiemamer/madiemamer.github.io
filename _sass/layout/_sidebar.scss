@@ -381,3 +381,25 @@
     max-width: 480px;
   }
 }
+
+.author__inline-links {
+  list-style: none;
+  margin: 12px 0 0 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.95rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
