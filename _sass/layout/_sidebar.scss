@@ -277,14 +277,21 @@
     width: 100%;
     max-width: 700px;
     margin: 0 auto 2em auto;
-    display: flex;
-    align-items: flex-start; /* top-aligns text with the top of the image, instead of centering */
-    gap: 30px;
     text-align: left;
   }
 
   @include breakpoint($x-large) {
     max-width: 700px;
+  }
+}
+
+/* This is the actual flex container — the schema.org Person wrapper div
+   that directly contains the avatar, content, and urls blocks */
+.sidebar > div[itemscope] {
+  @include breakpoint($large) {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
   }
 }
 
