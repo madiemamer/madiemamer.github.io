@@ -324,3 +324,60 @@
     text-align: left;
   }
 }
+
+.author__name {
+  @include breakpoint($large) {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+}
+
+.author__pronouns {
+  /* repurposed as the small location caption above the name */
+  @include breakpoint($large) {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--global-text-color-light);
+    margin-bottom: 4px;
+  }
+}
+
+.author__bio {
+  @include breakpoint($large) {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 480px;
+  }
+}
+
+.author__location {
+  @include breakpoint($large) {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--global-text-color-light);
+    margin: 0 0 4px 0;
+  }
+}
+
+.author__name {
+  @include breakpoint($large) {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+}
+
+.author__bio {
+  @include breakpoint($large) {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 480px;
+  }
+}
