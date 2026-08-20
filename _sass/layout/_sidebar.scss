@@ -261,7 +261,7 @@
 
 /* ==========================================================================
    HERO-STYLE PROFILE OVERRIDE
-   Image on left, name/title/bio on the right
+   Image on left, name/title/bio to the right, top-aligned
    ========================================================================== */
 
 .sidebar {
@@ -278,7 +278,7 @@
     max-width: 700px;
     margin: 0 auto 2em auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* top-aligns text with the top of the image, instead of centering */
     gap: 30px;
     text-align: left;
   }
@@ -291,11 +291,11 @@
 .author__avatar {
   @include breakpoint($large) {
     display: block;
-    flex-shrink: 0; /* keeps the image from getting squeezed by the text next to it */
+    flex-shrink: 0;
   }
 
   img {
-    max-width: 280px; /* a bit smaller than the centered version, since it now sits beside text */
+    max-width: 280px;
     border-radius: 0%;
 
     @include breakpoint($large) {
@@ -308,7 +308,7 @@
 .author__content {
   @include breakpoint($large) {
     text-align: left;
-    flex: 1; /* lets the text column take up remaining space */
+    flex: 1;
   }
 }
 
