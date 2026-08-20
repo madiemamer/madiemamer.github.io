@@ -258,3 +258,58 @@
     }
   }
 }
+
+/* ==========================================================================
+   HERO-STYLE PROFILE OVERRIDE
+   Converts the narrow left sidebar into a centered top hero block
+   ========================================================================== */
+
+.sidebar {
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    height: auto;
+    overflow-y: visible;
+    position: relative;
+    padding-top: 0;
+  }
+
+  @include breakpoint($large) {
+    float: none;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 2em auto;
+    text-align: center;
+  }
+
+  @include breakpoint($x-large) {
+    max-width: 700px;
+  }
+}
+
+.author__avatar {
+  @include breakpoint($large) {
+    display: block;
+    text-align: center;
+  }
+
+  img {
+    max-width: 380px;
+    border-radius: 0%; /* square/editorial look — try 12px instead for soft rounded corners */
+
+    @include breakpoint($large) {
+      padding: 0;
+      border: none;
+    }
+  }
+}
+
+.author__content {
+  @include breakpoint($large) {
+    text-align: center;
+  }
+}
+
+.author__urls-wrapper {
+  @include breakpoint($large) {
+    text-align: center;
+  }
+}
