@@ -49,7 +49,7 @@ h1, h2, h3, h4 {
 
 /* ---------- COLORS (light mode) ---------- */
 html:not(.dark) {
-  --bg: #FAF0E6 !important;        /* page background */
+  --bg: #F3E5AB !important;        /* page background */
 }
 html:not(.dark) body,
 html:not(.dark) .prose {
@@ -74,15 +74,30 @@ body {
 
 /* Wider page. The theme's default is about 744px. */
 :root {
-  --w: 1100px !important;        /* try 960px–1300px to taste */
+  --w: 900px !important;        /* try 960px–1300px to taste */
 }
 .prose {
   max-width: none !important;    /* lets the text fill that width too */
 }
-
-/* Line under the top bar */
+/* Full-width line under the top bar */
 header {
-  border-bottom: 1px solid #c9d6de !important;   /* thickness, style, color */
+  border-bottom: none !important;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;                 /* full width of the screen */
+  height: 1px;                  /* thickness */
+  background: #D2B48C;          /* color */
+  transform: translateX(-50%);  /* centers it under the header */
+  pointer-events: none;
+}
+html {
+  overflow-x: clip;             /* prevents a sideways scrollbar */
 }
 
 /* Remove the dark-mode moon next to your name */
