@@ -12,28 +12,30 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
-        with:
-          path: themes/hugo-paper
       - uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.147.9'
           extended: true
       - id: pages
         uses: actions/configure-pages@v5
-      - run: >
+      - name: Put theme in place
+        run: |
+          mkdir -p exampleSite/themes/hugo-paper
+          cp -r layouts assets static i18n theme.toml exampleSite/themes/hugo-paper/
+      - name: Build site
+        run: >
           hugo --gc --minify
-          --source themes/hugo-paper/exampleSite
-          --themesDir ../..
+          --source exampleSite
           --baseURL "${{ steps.pages.outputs.base_url }}/"
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: themes/hugo-paper/exampleSite/public
+          path: exampleSite/public
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
