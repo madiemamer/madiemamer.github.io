@@ -55,7 +55,7 @@ h1, h2, h3, h4 {
 
 /* ---------- COLORS (light mode) ---------- */
 html:not(.dark) {
-  --bg: #fcfbf5 !important;        /* page background */
+  --bg: #faf9f6 !important;        /* page background */
 }
 html:not(.dark) body,
 html:not(.dark) .prose {
@@ -80,7 +80,7 @@ body {
 
 /* Wider page. The theme's default is about 744px. */
 :root {
-  --w: 1000px !important;        /* try 960px–1300px to taste */
+  --w: 1100px !important;        /* try 960px–1300px to taste */
 }
 main.prose {
   max-width: var(--w) !important;    /* content follows the --w width */
@@ -98,7 +98,7 @@ header::after {
   left: 50%;
   width: 100vw;                 /* full width of the screen */
   height: 1px;                  /* thickness */
-  background: #D2B48C;          /* color */
+  background: #192343;          /* color */
   transform: translateX(-50%);  /* centers it under the header */
   pointer-events: none;
 }
@@ -124,15 +124,15 @@ html {
   margin: 0 0 2.5rem 0 !important;
 }
 .section-bar-label {
-  font-family: "EB Garamond", cursive !important;
+  font-family: "EB Garamond" !important;
   font-weight: 600 !important;
   font-size: 2rem !important;
-  color: #2e7d5b !important;
+  color: #192343 !important;
   line-height: 1 !important;
 }
 .section-bar::after {
   content: "";
   flex: 1;
   height: 1px;
-  background: #D2B48C;   /* matches the tan you chose for the top line */
+  background: #192343;   /* matches the tan you chose for the top line */
 }
