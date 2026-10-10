@@ -40,7 +40,7 @@ img.not-prose.rounded-full:hover {
 }
 
 body, .prose {
-  font-family: "Inter", system-ui, sans-serif;   /* main text */
+  font-family: "Fraunces", system-ui, sans-serif;   /* main text */
 }
 h1, h2, h3, h4 {
   font-family: "Fraunces", Georgia, serif;       /* headings */
