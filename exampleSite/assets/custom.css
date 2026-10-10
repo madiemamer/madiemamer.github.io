@@ -74,7 +74,7 @@ body {
 
 /* Wider page. The theme's default is about 744px. */
 :root {
-  --w: 900px !important;        /* try 960px–1300px to taste */
+  --w: 1000px !important;        /* try 960px–1300px to taste */
 }
 main.prose {
   max-width: var(--w) !important;    /* content follows the --w width */
