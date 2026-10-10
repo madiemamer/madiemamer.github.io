@@ -24,26 +24,26 @@ img.not-prose.rounded-full:hover {
    change the name in each url (lowercase, spaces become dashes,
    e.g. "dm-serif-display") and in font-family below. */
 @font-face {
-  font-family: "Inter";
+  font-family: "Manrope";
   src: url("https://cdn.jsdelivr.net/fontsource/fonts/inter@latest/latin-400-normal.woff2") format("woff2");
   font-weight: 400;
 }
 @font-face {
-  font-family: "Inter";
+  font-family: "Manrope";
   src: url("https://cdn.jsdelivr.net/fontsource/fonts/inter@latest/latin-600-normal.woff2") format("woff2");
   font-weight: 600;
 }
 @font-face {
-  font-family: "Fraunces";
+  font-family: "EB Garamond";
   src: url("https://cdn.jsdelivr.net/fontsource/fonts/fraunces@latest/latin-600-normal.woff2") format("woff2");
   font-weight: 600;
 }
 
 body, .prose {
-  font-family: "Fraunces", system-ui, sans-serif;   /* main text */
+  font-family: "EB Garamond", system-ui, sans-serif;   /* main text */
 }
 h1, h2, h3, h4 {
-  font-family: "Fraunces", Georgia, serif;       /* headings */
+  font-family: "EB Garamond", Georgia, serif;       /* headings */
   font-weight: 600;
 }
 
@@ -107,7 +107,7 @@ html {
 
 /* ---------- SECTION BAR ---------- */
 @font-face {
-  font-family: "Dancing Script";
+  font-family: "EB Garamond";
   src: url("https://cdn.jsdelivr.net/fontsource/fonts/dancing-script@latest/latin-600-normal.woff2") format("woff2");
   font-weight: 600;
 }
@@ -118,7 +118,7 @@ html {
   margin: 0 0 2.5rem 0 !important;
 }
 .section-bar-label {
-  font-family: "Dancing Script", cursive !important;
+  font-family: "EB Garamond", cursive !important;
   font-weight: 600 !important;
   font-size: 2rem !important;
   color: #2e7d5b !important;
