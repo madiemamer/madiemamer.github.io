@@ -49,7 +49,7 @@ h1, h2, h3, h4 {
 
 /* ---------- COLORS (light mode) ---------- */
 html:not(.dark) {
-  --bg: #eef4f7 !important;        /* page background */
+  --bg: #fcfaf5 !important;        /* page background */
 }
 html:not(.dark) body,
 html:not(.dark) .prose {
