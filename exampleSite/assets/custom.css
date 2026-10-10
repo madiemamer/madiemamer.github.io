@@ -9,7 +9,7 @@ div:has(> img.not-prose.rounded-full) {
 }
 
 img.not-prose.rounded-full {
-  width: 12rem !important;      /* make bigger or smaller to taste */
+  width: 20rem !important;      /* make bigger or smaller to taste */
   height: auto !important;      /* keeps the photo's own proportions */
   border-radius: 0 !important;  /* 0 = sharp corners; try 0.5rem for soft */
 }
