@@ -1,0 +1,19 @@
+/* Avatar: show the photo in its natural shape */
+div:has(> img.not-prose.rounded-full) {
+  width: auto;
+  height: auto;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: none !important;
+}
+
+img.not-prose.rounded-full {
+  width: 8rem;          /* make bigger or smaller to taste */
+  height: auto;         /* keeps the photo's own proportions */
+  border-radius: 0.5rem; /* softly rounded corners; use 0 for sharp corners */
+}
+
+img.not-prose.rounded-full:hover {
+  animation: none;      /* stops the spin on hover */
+}
