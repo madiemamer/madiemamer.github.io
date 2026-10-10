@@ -76,8 +76,8 @@ body {
 :root {
   --w: 900px !important;        /* try 960px–1300px to taste */
 }
-.prose {
-  max-width: none !important;    /* lets the text fill that width too */
+main.prose {
+  max-width: var(--w) !important;    /* content follows the --w width */
 }
 /* Full-width line under the top bar */
 header {
