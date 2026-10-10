@@ -104,3 +104,29 @@ html {
 .btn-dark {
   display: none !important;
 }
+
+/* ---------- SECTION BAR ---------- */
+@font-face {
+  font-family: "Dancing Script";
+  src: url("https://cdn.jsdelivr.net/fontsource/fonts/dancing-script@latest/latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+}
+.section-bar {
+  display: flex !important;
+  align-items: center !important;
+  gap: 1rem !important;
+  margin: 0 0 2.5rem 0 !important;
+}
+.section-bar-label {
+  font-family: "Dancing Script", cursive !important;
+  font-weight: 600 !important;
+  font-size: 2rem !important;
+  color: #2e7d5b !important;
+  line-height: 1 !important;
+}
+.section-bar::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #D2B48C;   /* matches the tan you chose for the top line */
+}
