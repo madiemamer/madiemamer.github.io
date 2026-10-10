@@ -55,7 +55,7 @@ h1, h2, h3, h4 {
 
 /* ---------- COLORS (light mode) ---------- */
 html:not(.dark) {
-  --bg: #faf9f6 !important;        /* page background */
+  --bg: #F4F3F2 !important;        /* page background */
 }
 html:not(.dark) body,
 html:not(.dark) .prose {
