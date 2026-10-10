@@ -14,3 +14,53 @@ min_version = "0.57.1"
 [author]
   name = "nanxiaobei"
   homepage = "https://lee.so/"
+/* ---------- FONTS ---------- */
+/* Fonts load from a free font library. To use a different font,
+   change the name in each url (lowercase, spaces become dashes,
+   e.g. "dm-serif-display") and in font-family below. */
+@font-face {
+  font-family: "Inter";
+  src: url("https://cdn.jsdelivr.net/fontsource/fonts/inter@latest/latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("https://cdn.jsdelivr.net/fontsource/fonts/inter@latest/latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("https://cdn.jsdelivr.net/fontsource/fonts/fraunces@latest/latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+}
+
+body, .prose {
+  font-family: "Inter", system-ui, sans-serif;   /* main text */
+}
+h1, h2, h3, h4 {
+  font-family: "Fraunces", Georgia, serif;       /* headings */
+  font-weight: 600;
+}
+
+/* ---------- COLORS (light mode) ---------- */
+html:not(.dark) {
+  --bg: #eef4f7 !important;        /* page background */
+}
+html:not(.dark) body,
+html:not(.dark) .prose {
+  color: #1f2a33;                  /* main text */
+}
+html:not(.dark) h1,
+html:not(.dark) h2,
+html:not(.dark) h3 {
+  color: #14506b;                  /* headings */
+}
+html:not(.dark) .prose a {
+  color: #1f7a8c;                  /* links */
+}
+
+/* ---------- STYLE ---------- */
+body {
+  font-size: 17px;                 /* overall text size */
+  line-height: 1.7;                /* spacing between lines */
+}
