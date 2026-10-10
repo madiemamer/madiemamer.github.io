@@ -9,9 +9,9 @@ div:has(> img.not-prose.rounded-full) {
 }
 
 img.not-prose.rounded-full {
-  width: 8rem;          /* make bigger or smaller to taste */
+  width: 12rem;          /* make bigger or smaller to taste */
   height: auto;         /* keeps the photo's own proportions */
-  border-radius: 0.5rem; /* softly rounded corners; use 0 for sharp corners */
+  border-radius: 0rem; /* softly rounded corners; use 0 for sharp corners */
 }
 
 img.not-prose.rounded-full:hover {
