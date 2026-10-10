@@ -20,10 +20,6 @@ theme = "hugo-paper"
   avatar = 'msmamer@unc.edu'
   name = 'Madeline'
   bio = 'Your one-liner here'
-
-avatar = 'nanxiaobei@gmail.com'
-  name = 'Lee'
-  bio = 'Discover fresh context'
 # ------------------------------
 
 # needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
