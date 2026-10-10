@@ -1,7 +1,7 @@
-baseURL = "https://hugo-paper.vercel.app/"
-title = "Paper"
-author = "Steve Francia"
-copyright = "© 2025, lee.so"
+baseURL = "https://madiemamer.github.io/"
+title = "Madeline (Madie) Mamer"
+author = "Madeline (Madie Mamer"
+copyright = "© 2026, Madeline Mamer"
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
@@ -16,9 +16,10 @@ theme = "hugo-paper"
 
 [params]
   color = 'linen'
-  twitter = 'nanxiaobei'
-  github = 'nanxiaobei'
-  instagram = 'nan.xiaobei'
+  github = 'madiemamer'
+  avatar = 'msmamer@unc.edu'
+  name = 'Madeline'
+  bio = 'Your one-liner here'
 
 avatar = 'nanxiaobei@gmail.com'
   name = 'Lee'
