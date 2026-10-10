@@ -19,7 +19,7 @@ jobs:
           path: themes/hugo-paper
       - uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.147.9'
           extended: true
       - id: pages
         uses: actions/configure-pages@v5
