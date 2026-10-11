@@ -189,8 +189,10 @@ html {
 }
 .hero-links a {
   font-family: "JetBrains Mono", monospace !important;
-  font-size: 0.95rem !important;
-  color: #444 !important;
+  font-size: 0.8rem !important;          /* same size as the header line */
+  letter-spacing: 0.2em !important;      /* same wide spacing */
+  text-transform: uppercase !important;  /* same capitals */
+  color: #555 !important;                /* same grey */
   text-decoration: none !important;
 }
 .hero-links a:hover {
