@@ -1,3 +1,18 @@
+/* ==========================================================
+   COLOR PALETTE: Terracotta, stone & espresso
+   Every color on the site comes from these eight lines.
+   Change a value here and it updates everywhere.
+   ========================================================== */
+:root {
+  --c-bg:       #F8F7F5;   /* page background (warm stone white) */
+  --c-text:     #33281F;   /* main text (espresso) */
+  --c-soft:     #56473B;   /* quieter paragraphs (lighter brown) */
+  --c-muted:    #7D6D60;   /* small labels, links row, captions */
+  --c-heading:  #2C3E55;   /* headings and titles (dusty navy) */
+  --c-accent:   #B65A36;   /* accent: italic headline word, numbers, links (terracotta) */
+  --c-line:     #2C3E55;   /* divider lines */
+  --c-hairline: #E2CDC1;   /* soft underlines and placeholder borders */
+}
 
 /* ---------- FONTS ---------- */
 /* The url is the font file; font-family is just its label.
@@ -32,21 +47,36 @@ h1, h2, h3, h4 {
   font-weight: 600 !important;
 }
 
-/* ---------- COLORS (light mode) ---------- */
+/* ---------- COLORS (uses the palette at the top) ---------- */
 html:not(.dark) {
-  --bg: #fefaf1 !important;        /* page background */
+  --bg: var(--c-bg) !important;
+  /* colors used by the theme's text styles on every page */
+  --tw-prose-body: var(--c-text);
+  --tw-prose-headings: var(--c-heading);
+  --tw-prose-bold: var(--c-text);
+  --tw-prose-links: var(--c-accent);
+  --tw-prose-quotes: var(--c-soft);
+  --tw-prose-captions: var(--c-muted);
+  --tw-prose-bullets: var(--c-muted);
+  --tw-prose-hr: var(--c-hairline);
 }
 html:not(.dark) body,
-html:not(.dark) .prose {
-  color: #1f2a33;                  /* main text */
+html:not(.dark) .prose,
+html:not(.dark) .prose strong {
+  color: var(--c-text) !important;
 }
 html:not(.dark) h1,
 html:not(.dark) h2,
 html:not(.dark) h3 {
-  color: #14506b;                  /* headings */
+  color: var(--c-heading) !important;
 }
 html:not(.dark) .prose a {
-  color: #1f7a8c;                  /* links */
+  color: var(--c-accent) !important;
+}
+html:not(.dark) body > header a,
+html:not(.dark) body > footer,
+html:not(.dark) body > footer a {
+  color: var(--c-text) !important;     /* top bar and footer */
 }
 
 /* ---------- STYLE ---------- */
@@ -77,7 +107,7 @@ body > header::after {
   left: 50%;
   width: 100vw;                 /* full width of the screen */
   height: 1px;                  /* thickness */
-  background: #192343;          /* color */
+  background: var(--c-line);    /* color */
   transform: translateX(-50%);  /* centers it under the header */
   pointer-events: none;
 }
@@ -106,14 +136,14 @@ html {
   font-family: "EB Garamond" !important;
   font-weight: 600 !important;
   font-size: 2rem !important;
-  color: #192343 !important;
+  color: var(--c-heading) !important;
   line-height: 1 !important;
 }
 .section-bar::after {
   content: "";
   flex: 1;
   height: 1px;
-  background: #192343;   /* matches the tan you chose for the top line */
+  background: var(--c-line);
 }
 
 /* ---------- HERO (photo + intro) ---------- */
@@ -147,7 +177,7 @@ html {
   font-size: 0.8rem !important;
   letter-spacing: 0.2em !important;
   text-transform: uppercase !important;
-  color: #555 !important;
+  color: var(--c-muted) !important;
   margin: 0 0 0.75rem 0 !important;
 }
 .hero-title {
@@ -155,31 +185,31 @@ html {
   font-weight: 400 !important;
   font-size: 3.5rem !important;         /* headline size */
   line-height: 1.1 !important;
-  color: #1a1a1a !important;
+  color: var(--c-heading) !important;
   margin: 0 0 1.5rem 0 !important;
 }
 .hero-title em {
   font-style: italic !important;
-  color: #4a6b57 !important;            /* the green accent word */
+  color: var(--c-accent) !important;   /* the accent word */
 }
 .hero-intro {
   font-family: "EB Garamond", Georgia, serif !important;
   font-size: 1.35rem !important;
   line-height: 1.5 !important;
-  color: #1a1a1a !important;
+  color: var(--c-text) !important;
   max-width: 32rem !important;
   margin: 0 0 1.5rem 0 !important;
 }
 .hero-intro a {
   color: inherit !important;
   text-decoration: none !important;
-  border-bottom: 1px solid #c9bfa8 !important;
+  border-bottom: 1px solid var(--c-hairline) !important;
 }
 .hero-current {
   font-family: "EB Garamond", Georgia, serif !important;
   font-size: 1.15rem !important;
   line-height: 1.5 !important;
-  color: #666 !important;               /* quieter grey */
+  color: var(--c-soft) !important;
   max-width: 30rem !important;
   margin: 0 0 2rem 0 !important;
 }
@@ -192,11 +222,15 @@ html {
   font-size: 0.8rem !important;          /* same size as the header line */
   letter-spacing: 0.2em !important;      /* same wide spacing */
   text-transform: uppercase !important;  /* same capitals */
-  color: #555 !important;                /* same grey */
+  color: var(--c-muted) !important;
   text-decoration: none !important;
 }
+html:not(.dark) .prose .hero-links a { color: var(--c-muted) !important; }
+html:not(.dark) .prose .hero-links a:hover { color: var(--c-accent) !important; }
+html:not(.dark) .prose .hero-intro a,
+html:not(.dark) .prose .research-body a { color: inherit !important; }
 .hero-links a:hover {
-  color: #4a6b57 !important;
+  color: var(--c-accent) !important;
 }
 
 /* On phones: stack the photo above the text */
@@ -240,18 +274,18 @@ html {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  border: 1px dashed #c9bfa8 !important;
+  border: 1px dashed var(--c-hairline) !important;
   font-family: "JetBrains Mono", monospace !important;
   font-size: 0.75rem !important;
   letter-spacing: 0.2em !important;
   text-transform: uppercase !important;
-  color: #999 !important;
+  color: var(--c-muted) !important;
 }
 .research-num {
   font-family: "JetBrains Mono", monospace !important;
   font-size: 0.8rem !important;
   letter-spacing: 0.2em !important;
-  color: #4a6b57 !important;            /* green accent */
+  color: var(--c-accent) !important;
   margin: 0 0 0.5rem 0 !important;
 }
 .research-title {
@@ -259,19 +293,19 @@ html {
   font-weight: 400 !important;
   font-size: 2rem !important;
   line-height: 1.15 !important;
-  color: #1a1a1a !important;
+  color: var(--c-heading) !important;
   margin: 0 0 1rem 0 !important;
 }
 .research-body p {
   font-family: "EB Garamond", Georgia, serif !important;
   font-size: 1.15rem !important;
   line-height: 1.55 !important;
-  color: #444 !important;
+  color: var(--c-soft) !important;
   margin: 0 0 1rem 0 !important;
 }
 .research-body a {
   color: inherit !important;
-  border-bottom: 1px solid #c9bfa8 !important;
+  border-bottom: 1px solid var(--c-hairline) !important;
   text-decoration: none !important;
 }
 
@@ -288,7 +322,7 @@ html {
   font-size: 1.75rem !important;
   margin-top: 2.5rem !important;
   padding-bottom: 0.4rem !important;
-  border-bottom: 1px solid #192343 !important;
+  border-bottom: 1px solid var(--c-line) !important;
 }
 
 /* ---------- ILLUSTRATION GALLERY ---------- */
@@ -313,6 +347,6 @@ html {
   font-size: 0.75rem !important;
   letter-spacing: 0.15em !important;
   text-transform: uppercase !important;
-  color: #555 !important;
+  color: var(--c-muted) !important;
   margin-top: 0.75rem !important;
 }
