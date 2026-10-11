@@ -171,6 +171,7 @@ html {
   flex-shrink: 0 !important;
   margin: 0 !important;
   border: 1px solid rgba(0,0,0,0.12) !important;
+  border-radius: 12px !important;       /* corner roundness */
 }
 .hero-kicker {
   font-family: "JetBrains Mono", monospace !important;
