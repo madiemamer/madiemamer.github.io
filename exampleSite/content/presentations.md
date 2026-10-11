@@ -28,6 +28,11 @@ Observing the Southern Ocean: Present Challenges and Future Strategies Workshop,
 **Wave Erosion of Ice Fronts**  
 Parameterizations for Global Dynamical Models in Climatology, Astrophysics, and Planetology, Les Houches, France · March 2025
 
+**A Mathematical Model Describing Ocean Surface Wave Erosion of Ice Fronts**  
+AGU Fall Meeting, Washington, D.C. · December 2024
+
+**The Role of Turbulent Mixing in Seawater Intrusion Under Grounded Ice Sheets**  
+AGU Fall Meeting, Chicago, Illinois · December 2022
 ## Sessions convened
 
 **Ice–Ocean Interactions at High Latitude Environments** · *Primary Convener*  
@@ -54,8 +59,3 @@ A conference on recent advances in Greenland ice sheet research and their implic
 
 *The Cryosphere* (2025) · *Journal of Geophysical Research: Oceans* (2025) · *Journal of Glaciology* (2024)
 
-**A Mathematical Model Describing Ocean Surface Wave Erosion of Ice Fronts**  
-AGU Fall Meeting, Washington, D.C. · December 2024
-
-**The Role of Turbulent Mixing in Seawater Intrusion Under Grounded Ice Sheets**  
-AGU Fall Meeting, Chicago, Illinois · December 2022
