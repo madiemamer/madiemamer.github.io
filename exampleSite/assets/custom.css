@@ -65,12 +65,12 @@ main.prose {
   max-width: var(--w) !important;    /* content follows the --w width */
 }
 /* Full-width line under the top bar */
-header {
+body > header {
   border-bottom: none !important;
   position: relative;
 }
 
-header::after {
+body > header::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -279,4 +279,40 @@ html {
 @media (max-width: 760px) {
   .research-item { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
   .research-item:nth-child(even) .research-media { order: 0 !important; }
+}
+
+/* ---------- PAGES (Presentations, Mentorship, ...) ---------- */
+.prose h2 {
+  font-family: "EB Garamond", Georgia, serif !important;
+  font-weight: 400 !important;
+  font-size: 1.75rem !important;
+  margin-top: 2.5rem !important;
+  padding-bottom: 0.4rem !important;
+  border-bottom: 1px solid #192343 !important;
+}
+
+/* ---------- ILLUSTRATION GALLERY ---------- */
+.gallery {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)) !important;
+  gap: 2.5rem !important;
+  margin-top: 2.5rem !important;
+}
+.gallery-item { margin: 0 !important; }
+.gallery-item img {
+  display: block !important;
+  width: 100% !important;
+  aspect-ratio: 4 / 3 !important;
+  object-fit: contain !important;
+  background: #fff !important;
+  border: 1px solid rgba(0,0,0,0.08) !important;
+  margin: 0 !important;
+}
+.gallery-item figcaption {
+  font-family: "JetBrains Mono", monospace !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  color: #555 !important;
+  margin-top: 0.75rem !important;
 }

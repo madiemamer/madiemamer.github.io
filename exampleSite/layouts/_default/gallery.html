@@ -1,0 +1,21 @@
+{{- define "main" -}}
+<article>
+  <header class="mb-10">
+    <h1 class="my-0! pb-2.5">{{- .Title -}}</h1>
+  </header>
+  <section>{{- .Content -}}</section>
+
+  <!-- Every image in this page's folder, in file-name order -->
+  <div class="gallery not-prose">
+    {{- range sort (.Resources.ByType "image") "Name" -}}
+    {{- $caption := .Name | path.BaseName | replaceRE "[-_]+" " " | strings.FirstUpper -}}
+    <figure class="gallery-item">
+      <a href="{{ .RelPermalink }}" target="_blank" rel="noopener">
+        <img src="{{ .RelPermalink }}" alt="{{ $caption }}" loading="lazy" />
+      </a>
+      <figcaption>{{ $caption }}</figcaption>
+    </figure>
+    {{- end -}}
+  </div>
+</article>
+{{- end -}}
