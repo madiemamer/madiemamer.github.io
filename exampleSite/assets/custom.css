@@ -209,3 +209,74 @@ html {
   .hero-photo { width: 100% !important; max-width: 20rem !important; }
   .hero-title { font-size: 2.5rem !important; }
 }
+
+/* ---------- RESEARCH TOPICS ---------- */
+.research {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 4.5rem !important;               /* space between topics */
+  margin-bottom: 4rem !important;
+}
+.research-item {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;   /* figure | text */
+  gap: 3.5rem !important;
+  align-items: center !important;
+}
+/* Every other topic flips: text on the left, figure on the right */
+.research-item:nth-child(even) .research-media { order: 2 !important; }
+
+.research-media img,
+.research-media video {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
+  border: 1px solid rgba(0,0,0,0.08) !important;
+  background: #fff !important;
+}
+.research-placeholder {
+  aspect-ratio: 3 / 2 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 1px dashed #c9bfa8 !important;
+  font-family: "JetBrains Mono", monospace !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  color: #999 !important;
+}
+.research-num {
+  font-family: "JetBrains Mono", monospace !important;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.2em !important;
+  color: #4a6b57 !important;            /* green accent */
+  margin: 0 0 0.5rem 0 !important;
+}
+.research-title {
+  font-family: "EB Garamond", Georgia, serif !important;
+  font-weight: 400 !important;
+  font-size: 2rem !important;
+  line-height: 1.15 !important;
+  color: #1a1a1a !important;
+  margin: 0 0 1rem 0 !important;
+}
+.research-body p {
+  font-family: "EB Garamond", Georgia, serif !important;
+  font-size: 1.15rem !important;
+  line-height: 1.55 !important;
+  color: #444 !important;
+  margin: 0 0 1rem 0 !important;
+}
+.research-body a {
+  color: inherit !important;
+  border-bottom: 1px solid #c9bfa8 !important;
+  text-decoration: none !important;
+}
+
+/* On phones: figure above text */
+@media (max-width: 760px) {
+  .research-item { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+  .research-item:nth-child(even) .research-media { order: 0 !important; }
+}

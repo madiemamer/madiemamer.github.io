@@ -1,0 +1,59 @@
+{{- define "main" -}}
+
+{{- $avatar_url := $.Scratch.Get "avatar_url" -}}<!---->
+<!-- Hero: photo on the left, intro on the right -->
+<div class="hero not-prose">
+  {{- if $avatar_url -}}
+  <img class="hero-photo" src="{{- $avatar_url -}}" alt="{{- site.Params.name | default site.Title -}}" />
+  {{- end -}}
+  <div class="hero-text">
+    <p class="hero-kicker">Postdoctoral Researcher | UNC Chapel Hill</p>
+    <h1 class="hero-title">Your headline <em>here</em>.</h1>
+    <p class="hero-intro">
+      One or two sentences about who you are and what you study.
+      You can link things like <a href="https://www.unc.edu/">your lab or department</a>.
+    </p>
+    <p class="hero-current">
+      A second, quieter paragraph about what you're working on right now.
+    </p>
+    <div class="hero-links">
+      <a href="https://github.com/madiemamer">github</a>
+      <a href="https://scholar.google.com/">scholar</a>
+      <a href="https://orcid.org/">orcid</a>
+      <a href="mailto:msmamer@unc.edu">email</a>
+    </div>
+  </div>
+</div>
+
+<!-- Section bar: "Research" -->
+<div class="section-bar not-prose" id="research">
+  <span class="section-bar-label">Research</span>
+</div>
+
+<!-- Research topics: one row per file in content/research/, ordered by weight -->
+<div class="research not-prose">
+  {{- with site.GetPage "/research" -}}
+  {{- range $i, $p := .Pages.ByWeight -}}
+  <article class="research-item">
+    <div class="research-media">
+      {{- with $p.Params.video -}}
+      <video src="{{ . | relURL }}" {{ with $p.Params.poster }}poster="{{ . | relURL }}" {{ end }}autoplay muted loop playsinline></video>
+      {{- else -}}
+      {{- with $p.Params.image -}}
+      <img src="{{ . | relURL }}" alt="{{ $p.Title }}" loading="lazy" />
+      {{- else -}}
+      <div class="research-placeholder">Figure coming soon</div>
+      {{- end -}}
+      {{- end -}}
+    </div>
+    <div class="research-text">
+      <p class="research-num">{{ printf "%02d" (add $i 1) }}</p>
+      <h3 class="research-title">{{ $p.Title }}</h3>
+      <div class="research-body">{{ $p.Content }}</div>
+    </div>
+  </article>
+  {{- end -}}
+  {{- end -}}
+</div>
+
+{{- end -}}
