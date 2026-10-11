@@ -34,11 +34,3 @@ A guest lesson introducing how the ocean melts glaciers and ice shelves, and why
 **Introduction to Chemical and Physical Oceanography** · Spring 2023
 
 **Climate and Global Change** · Fall 2022
-
-## Outreach
-
-**Sea-level rise curriculum** · Summers 2024 & 2025  
-Through Georgia Tech's GIFT program, I worked with Dr. Alex Robel and an Atlanta high school math teacher to design a standards-aligned sea-level rise curriculum built on tide gauge records and NOAA's global sea-level data.
-
-**STEM Professional School Partnership** · 2021–2022  
-With the Robel and Chu labs, I designed and taught a middle school lesson on geologic time and Earth's history.

@@ -1,8 +1,8 @@
 ---
-title: "Mentorship"
+title: "Mentorship & Outreach"
 ---
 
-Mentoring students is one of the most rewarding parts of my work, both in research and beyond it.
+Mentoring students and sharing science beyond the university are some of the most rewarding parts of my work.
 
 ## Research mentorship
 
@@ -21,3 +21,11 @@ I mentored Georgia Tech undergraduates on projects combining observations and co
 
 **Progress Mentor** · Fall 2022  
 I mentored a young woman in STEM from the greater Atlanta area, offering guidance on academic and professional development and helping build confidence and leadership skills.
+
+## Outreach
+
+**Sea-level rise curriculum** · Summers 2024 & 2025  
+Through Georgia Tech's GIFT program, I worked with Dr. Alex Robel and an Atlanta high school math teacher to design a standards-aligned sea-level rise curriculum built on tide gauge records and NOAA's global sea-level data.
+
+**STEM Professional School Partnership** · 2021–2022  
+With the Robel and Chu labs, I designed and taught a middle school lesson on geologic time and Earth's history.

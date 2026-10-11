@@ -62,4 +62,14 @@
   {{- end -}}
 </div>
 
+<!-- Section bar: "About" -->
+<div class="section-bar not-prose" id="about">
+  <span class="section-bar-label">About</span>
+</div>
+
+<!-- About: text and photos from content/about.md -->
+{{- with site.GetPage "/about" -}}
+<div class="about not-prose">{{ .Content }}</div>
+{{- end -}}
+
 {{- end -}}
