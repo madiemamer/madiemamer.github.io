@@ -1,25 +1,4 @@
-/* Avatar: show the photo in its natural shape */
-div:has(> img.not-prose.rounded-full) {
-  width: auto !important;
-  height: auto !important;
-  padding: 0 !important;
-  border: none !important;
-  border-radius: 0 !important;
-  background: none !important;
-}
 
-img.not-prose.rounded-full {
-  width: 20rem !important;      /* make bigger or smaller to taste */
-  height: auto !important;      /* keeps the photo's own proportions */
-  border-radius: 0 !important;  /* 0 = sharp corners; try 0.5rem for soft */
-}
-
-img.not-prose.rounded-full:hover {
-  animation: none !important;   /* stops the spin on hover */
-}
-
-
-/* ---------- FONTS ---------- */
 /* ---------- FONTS ---------- */
 /* The url is the font file; font-family is just its label.
    To swap a font, change BOTH to match. */
@@ -135,4 +114,96 @@ html {
   flex: 1;
   height: 1px;
   background: #192343;   /* matches the tan you chose for the top line */
+}
+
+/* ---------- HERO (photo + intro) ---------- */
+@font-face {
+  font-family: "EB Garamond";
+  src: url("https://cdn.jsdelivr.net/fontsource/fonts/eb-garamond@latest/latin-400-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("https://cdn.jsdelivr.net/fontsource/fonts/jetbrains-mono@latest/latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+}
+
+.hero {
+  display: flex !important;
+  align-items: center !important;
+  gap: 4rem !important;                 /* space between photo and text */
+  margin: 1rem 0 4rem 0 !important;
+}
+.hero-photo {
+  width: 18rem !important;              /* photo width */
+  height: auto !important;
+  flex-shrink: 0 !important;
+  margin: 0 !important;
+  border: 1px solid rgba(0,0,0,0.12) !important;
+}
+.hero-kicker {
+  font-family: "JetBrains Mono", monospace !important;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  color: #555 !important;
+  margin: 0 0 0.75rem 0 !important;
+}
+.hero-title {
+  font-family: "EB Garamond", Georgia, serif !important;
+  font-weight: 400 !important;
+  font-size: 3.5rem !important;         /* headline size */
+  line-height: 1.1 !important;
+  color: #1a1a1a !important;
+  margin: 0 0 1.5rem 0 !important;
+}
+.hero-title em {
+  font-style: italic !important;
+  color: #4a6b57 !important;            /* the green accent word */
+}
+.hero-intro {
+  font-family: "EB Garamond", Georgia, serif !important;
+  font-size: 1.35rem !important;
+  line-height: 1.5 !important;
+  color: #1a1a1a !important;
+  max-width: 32rem !important;
+  margin: 0 0 1.5rem 0 !important;
+}
+.hero-intro a {
+  color: inherit !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid #c9bfa8 !important;
+}
+.hero-current {
+  font-family: "EB Garamond", Georgia, serif !important;
+  font-size: 1.15rem !important;
+  line-height: 1.5 !important;
+  color: #666 !important;               /* quieter grey */
+  max-width: 30rem !important;
+  margin: 0 0 2rem 0 !important;
+}
+.hero-links {
+  display: flex !important;
+  gap: 2rem !important;
+}
+.hero-links a {
+  font-family: "JetBrains Mono", monospace !important;
+  font-size: 0.95rem !important;
+  color: #444 !important;
+  text-decoration: none !important;
+}
+.hero-links a:hover {
+  color: #4a6b57 !important;
+}
+
+/* On phones: stack the photo above the text */
+@media (max-width: 760px) {
+  .hero {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 2rem !important;
+  }
+  .hero-photo { width: 100% !important; max-width: 20rem !important; }
+  .hero-title { font-size: 2.5rem !important; }
 }
