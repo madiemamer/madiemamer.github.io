@@ -14,7 +14,7 @@ build:
 
 I grew up in the desert of Southern California, in a largely agricultural community, about as far from polar environments as you can get.
 
-In Seattle, I took my first Earth science course and was captivated by the complexity of Earth systems. Polar environments became specifically exciting to me because of how fascinating glacier ice is. Ice is both a mineral with a crystalline structure and a rock that is sedimentary, formed by deposition of snow. Ice is a solid that flows, yet fractures, and that takes on different structures under different pressures. I had always been drawn to the logical problem-solving of math and coding, so modeling was a natural path.
+I completed my undergraduate degree in Earth and Space Sciences at the University of Washington in Seattle. It was there I took my first Earth science course and was captivated by the complexity of Earth systems. Polar environments became specifically exciting to me because of how fascinating glacier ice is. Ice is both a mineral with a crystalline structure and a rock that is sedimentary, formed by deposition of snow. Ice is a solid that flows, yet fractures, and that takes on different structures under different pressures. I had always been drawn to the logical problem-solving of math and coding, so modeling was a natural path.
 
 <figure class="about-float float-right">
   <img src="/about/nuuk-selfie.jpg" alt="Madeline on the tundra above Nuuk, Greenland" loading="lazy">
