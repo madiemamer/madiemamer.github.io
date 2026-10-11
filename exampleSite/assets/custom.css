@@ -373,7 +373,7 @@ html:not(.dark) .prose .research-body a { color: inherit !important; }
   color: var(--c-heading) !important;
 }
 .about-float {
-  width: 40% !important;             /* photo width */
+  width: 30% !important;             /* photo width */
   margin: 0.35rem 0 1.25rem 0 !important;
 }
 .about-float.float-left  { float: left !important;  clear: both !important; margin-right: 2.5rem !important; }
