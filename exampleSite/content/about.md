@@ -21,8 +21,8 @@ In Seattle, I took my first Earth science course and fell for the complexity of 
   <figcaption>From GRISO Summer School in Nuuk, Greenland</figcaption>
 </figure>
 
-During my Ph.D. at Georgia Tech, I worked on the challenge of bridging the time and length scales of oceans and ice sheets. I'm drawn to questions about how ice shapes its ocean environment over short and long timescales, through mixing, water mass transformation, and the constraints of geometry. Looking ahead, I hope to extend my work into models of ice flow.
+During my Ph.D. at Georgia Tech, I modeled fluid dynamics at the glacier–ocean interface that are too small for climate models to capture. My dissertation explored how stratification, waves, and bubbles shape ocean flow near the ice and, in turn, how quickly glaciers lose mass. I'm drawn to questions about how ice shapes its ocean environment over short and long timescales, through mixing, water mass transformation, and the constraints of geometry. Looking ahead, I hope to extend my work into models of ice flow.
 
 Some of the most rewarding experiences of my career have been mentoring undergraduate and graduate students, convening sessions at workshops, and hearing from community experts whose lives my science touches. Science is at its best when it's social, shaped by many perspectives and methods, and I love connecting with people over both its intricacies and its wonder.
 
-That's also why I care about science communication: making work that is informative but accessible. Imagery is often the best way to do that, and during my Ph.D. I found a real passion for science illustration.
+That's also why I care about science communication, making work that is informative but accessible. Imagery is often the best way to do that, and during my Ph.D. I found a real passion for science illustration.
