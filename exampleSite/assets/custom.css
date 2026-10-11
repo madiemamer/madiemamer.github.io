@@ -166,7 +166,7 @@ html {
   margin: 1rem 0 4rem 0 !important;
 }
 .hero-photo {
-  width: 18rem !important;              /* photo width */
+  width: 20rem !important;              /* photo width */
   height: auto !important;
   flex-shrink: 0 !important;
   margin: 0 !important;
